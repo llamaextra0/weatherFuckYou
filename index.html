@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="t"></div>
+
+<script>
+  
+  var ts = location.hash.substring(1);          
+  var date = new Date(ts * 1000);                
+  
+  document.body.style = "background:#000;color:#fff;height:100vh;margin:0;display:flex;align-items:center;justify-content:center;font:900 10vw monospace";
+  document.getElementById("t").innerText = date.toLocaleString();
+</script>
+</body>
+</html>
